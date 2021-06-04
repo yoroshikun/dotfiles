@@ -1,0 +1,2 @@
+# Reference local binarys
+export PATH=/usr/local/bin:$PATH
