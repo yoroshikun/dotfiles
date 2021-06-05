@@ -1,4 +1,5 @@
 {{- if (eq .chezmoi.os "darwin") -}}
 #!/bin/bash
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 {{ end -}}

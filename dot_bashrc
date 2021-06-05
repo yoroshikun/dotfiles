@@ -4,4 +4,6 @@ export GPG_TTY=$(tty)
 
 # Starship
 eval "$(starship init bash)"
+
+# Cargo
 . "$HOME/.cargo/env"
