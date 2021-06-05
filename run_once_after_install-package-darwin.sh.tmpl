@@ -1,0 +1,4 @@
+{{- if (eq .chezmoi.os "darwin") -}}
+#!/bin/bash
+echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+{{ end -}}

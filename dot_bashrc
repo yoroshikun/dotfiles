@@ -1,3 +1,6 @@
 # Reference local binarys
 export PATH=/usr/local/bin:$PATH
 export GPG_TTY=$(tty)
+
+# Starship
+eval "$(starship init bash)"
