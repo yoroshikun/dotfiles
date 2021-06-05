@@ -15,3 +15,4 @@ cask "gpg-suite-no-mail"
 cask "visual-studio-code"
 
 # Mas
+mas "Xcode", id: 497799835
