@@ -16,9 +16,6 @@ set -x FZF_DEFAULT_COMMAND 'rg --files --hidden'
 # font
 set -g theme_nerd_fonts yes
 
-# asdf
-source ~/.asdf/asdf.fish
-
 # add cargo
 set PATH $HOME/.cargo/bin $PATH
 
