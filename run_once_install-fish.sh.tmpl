@@ -1,0 +1,9 @@
+{{- if (eq .chezmoi.os "darwin") -}}
+    echo /usr/local/bin/fish | sudo tee -a /etc/shells
+    chsh -s /usr/local/bin/fish
+{{ end -}}
+
+{{- if (eq .chezmoi.os "linux") -}}
+    echo /home/linuxbrew/.linuxbrew/bin/fish | sudo tee -a /etc/shells
+    chsh -s /home/linuxbrew/.linuxbrew/bin/fish
+{{ end -}}
