@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # add node as plugin
 asdf plugin-add nodejs
 # update

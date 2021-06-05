@@ -1,9 +1,11 @@
 {{- if (eq .chezmoi.os "darwin") -}}
+    #!/bin/bash
     echo /usr/local/bin/fish | sudo tee -a /etc/shells
     chsh -s /usr/local/bin/fish
 {{ end -}}
 
 {{- if (eq .chezmoi.os "linux") -}}
+    #!/bin/bash
     echo /home/linuxbrew/.linuxbrew/bin/fish | sudo tee -a /etc/shells
     chsh -s /home/linuxbrew/.linuxbrew/bin/fish
 {{ end -}}
