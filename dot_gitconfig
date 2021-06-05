@@ -1,0 +1,19 @@
+[core]
+	editor = nvim
+[user]
+	name = Drew Hutton <Yoroshi>
+	email = drew.hutton@pm.me
+	username = yoroshikun
+	signingkey = 2DC7FD6DA89157CE
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[color]
+	ui = true
+[push]
+	default = current
+[alias]
+	statsu = status
+	push-up = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
+	push-with-lease = push --force-with-lease
